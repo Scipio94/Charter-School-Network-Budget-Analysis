@@ -25,10 +25,15 @@ In total, the charter school has 180 part-time, full-time, and contracted positi
 
 Approximately one in four employees, 27%, at the small charter school network are in their first year of employment. As indicated in the pie chart above approximately one in two, 53%, employees at the small charter schoo have been employed at the small charter schooA for less than or equal to two years(Tier 1), 23% of the employees at the small charter schoo have been employed at the small charter schoo between two and five years(Tier 2), and a quarter, 25%, of the employees at the small charter schoo have been employed for five or more years (Tier 3). 
 
-The ES Campus has the lowest typical length of employment in the network, 1.21 years, Home Office has the second lowest typical length of employment in the network, 1.79 years, High School has the second high typical length of employment, approximately 2 years, and Middle School has the highest typical length of employment, 3.12 years.
+The ES Campus has the lowest typical length of employment in the network, 1 year and 3 months, Home Office has the second lowest typical length of employment in the network, 1 year and 10 months, High School has the second high typical length of employment, approximately 2 years, and Middle School has the highest typical length of employment, 3 years and 1 month.
 
-There are several positions within the small charter schoo that have a high turnover rate that affect academic outcomes, workplace culture, and learning environment. Deans of Instruction have a typical  length of employment of approximately 4 months, Directors have a typical length of employment of 1.19 years, Deans of Student Culture have a typical length of employment of 1.65 years, Teachers have a typical length of employment of 2.07 years, and Chiefs have a typical length of employment of 3.22 years.
-
+|**Position**|**Typical Length of Employment**|
+|---|---|
+|Deans of Instruction|Approximately 4 months|
+|Directors|1 year and 2 months|
+|Deans of Student Culture|1 year and 8 months|
+|Teachers|2 years and 1 month|
+|Chiefs|3 years and 3 months|
 
 2. What is the difference in the projected and actual salaries for both departments and campuses?
 
