@@ -7,9 +7,9 @@ SELECT
   ROUND((COUNT(*) - COUNT(CASE WHEN name LIKE '%VACANT%' THEN 'VACANT' END))/ COUNT(*),3) * 100 AS Pct_Filled
 FROM `single-being-353600.FA_Budget_Analysis.Budget_Analysis_23_24`
 WHERE name <> 'ELIMINATED';
--- 180 Employees overall
--- 26 Vacancies 
--- 154 Filled Positions
+-- 186 Employees overall
+-- 27 Vacancies 
+-- 159 Filled Positions
 -- 85.6% Filled
 
 /*Salary Statistical Measures*/
@@ -109,6 +109,7 @@ WHERE Budgeted = 'Unbudgeted';
 SELECT
   ROUND(SUM(t1.Actual_Budget_Salary),2) AS Total_Unbudgeted_Salaries
 FROM t1;
+-- 878,822.56
 
 /*Department Unbudgeted Hires Metrics*/
 SELECT 
@@ -126,7 +127,7 @@ FROM t1;
 
 
 /*Length of Employment Employee */
-CREATE TEMP TABLE t1 AS
+CREATE TEMP TABLE t2 AS
 SELECT
   Name,
   ROUND(EXTRACT( DAY FROM (CURRENT_DATE() - Employement_Start_Date))/ 365.25,2) AS Years_Employed,
@@ -165,18 +166,18 @@ ORDER BY Years_Employed;
 
 /*Statistical Metrics*/
 SELECT
-  DISTINCT ROUND(AVG(t1.years_employed) OVER (),2) AS Mean,
-  PERCENTILE_DISC(t1.years_employed,0.50) OVER () AS Median
-FROM t1
-WHERE t1.years_employed >= 0 ; --Filtering out projected hires
+  DISTINCT ROUND(AVG(t2.years_employed) OVER (),2) AS Mean,
+  PERCENTILE_DISC(t2.years_employed,0.50) OVER () AS Median
+FROM t2
+WHERE t2.years_employed >= 0 ; --Filtering out projected hires
 
 /*Range*/
 SELECT
-  MIN(t1.years_employed) AS _Min,
-  MAX(t1.years_employed) AS _Max,
-  MAX(t1.years_employed) - MIN(t1.years_employed) AS _Range
-FROM t1
-WHERE t1.years_employed >= 0; --Filtering out projected hires
+  MIN(t2.years_employed) AS _Min,
+  MAX(t2.years_employed) AS _Max,
+  MAX(t2.years_employed) - MIN(t2.years_employed) AS _Range
+FROM t2
+WHERE t2.years_employed >= 0; --Filtering out projected hires
 
 /*Employee Length Tiers*/
 SELECT 
@@ -185,13 +186,13 @@ SELECT
   ROUND(COUNT(*) OVER (PARTITION BY sub.Employee_Length_Tiers) / COUNT(*) OVER (),2) AS Employee_Tier_Length_Pct
 FROM
 (SELECT 
-  t1.years_employed, 
+  t2.years_employed, 
   CASE 
-    WHEN t1.years_employed <= 2.00 THEN 'Tier 1' 
-    WHEN t1.years_employed BETWEEN 2.01 AND 5.00 THEN 'Tier 2'
-    WHEN t1.years_employed > 5.00 THEN 'Tier 3' END AS Employee_Length_Tiers
-FROM t1
-WHERE t1.years_employed >= 0) AS sub
+    WHEN t2.years_employed <= 2.00 THEN 'Tier 1' 
+    WHEN t2.years_employed BETWEEN 2.01 AND 5.00 THEN 'Tier 2'
+    WHEN t2.years_employed > 5.00 THEN 'Tier 3' END AS Employee_Length_Tiers
+FROM t2
+WHERE t2.years_employed >= 0) AS sub
 ORDER BY sub.Employee_Length_Tiers; --Filtering out projected hires
 -- includes part-time and full-time staff
 -- Approximatey half of the staff members at FA have been employed at FA for less than 2 years
@@ -199,36 +200,37 @@ ORDER BY sub.Employee_Length_Tiers; --Filtering out projected hires
 
 /*First Year Staff Metrics*/
 SELECT
-  COUNT(CASE WHEN t1.years_employed <= 1.00 THEN 'First Year' END) AS First_Year_Ct,
-  ROUND(COUNT(CASE WHEN t1.years_employed <= 1.00 THEN 'First Year' END)/ COUNT(*),2) AS First_Year_Pct
-FROM t1
-WHERE t1.years_employed >= 0;
+  COUNT(CASE WHEN t2.years_employed <= 1.00 THEN 'First Year' END) AS First_Year_Ct,
+  ROUND(COUNT(CASE WHEN t2.years_employed <= 1.00 THEN 'First Year' END)/ COUNT(*),2) AS First_Year_Pct
+FROM t2
+WHERE t2.years_employed >= 0;
 -- Approximately one fourth of staff members have been employed at FA for less than a year
 
 /*Less than 5 years*/
 SELECT
-  COUNT(CASE WHEN t1.years_employed <= 5.00 THEN 'Fifth Years' END) AS Fifth_Year_Ct,
-  ROUND(COUNT(CASE WHEN t1.years_employed <= 5.00 THEN 'Fifth Years' END)/ COUNT(*),2) AS Fifth_Year_Pct
-FROM t1
-WHERE t1.years_employed >= 0;
+  COUNT(CASE WHEN t2.years_employed <= 5.00 THEN 'Fifth Years' END) AS Fifth_Year_Ct,
+  ROUND(COUNT(CASE WHEN t2.years_employed <= 5.00 THEN 'Fifth Years' END)/ COUNT(*),2) AS Fifth_Year_Pct
+FROM t2
+WHERE t2.years_employed >= 0;
 
 /*Length of Employment Position Group */
 SELECT
-  DISTINCT t1.Position_Group,
-  ROUND(AVG(t1.years_employed) OVER (PARTITION BY t1.position_group),2) AS Mean,
-  PERCENTILE_DISC(t1.years_employed,0.50) OVER (PARTITION BY t1.position_group) AS Median,
-  ROUND(AVG(t1.Actual_Budget_Salary) OVER (PARTITION BY t1.Position_Group),2) AS Avg_Position_Group_Salary,
-   PERCENTILE_DISC(t1.Actual_Budget_Salary,0.50) OVER (PARTITION BY t1.position_group) AS Median_Position_Group_Salary
-FROM t1
-WHERE t1.years_employed >= 0
+  DISTINCT t2.Position_Group,
+  ROUND(AVG(t2.years_employed) OVER (PARTITION BY t2.position_group),2) AS Mean,
+  PERCENTILE_DISC(t2.years_employed,0.50) OVER (PARTITION BY t2.position_group) AS Median,
+  ROUND(AVG(t2.Actual_Budget_Salary) OVER (PARTITION BY t2.Position_Group),2) AS Avg_Position_Group_Salary,
+   PERCENTILE_DISC(t2.Actual_Budget_Salary,0.50) OVER (PARTITION BY t2.position_group) AS Median_Position_Group_Salary
+FROM t2
+WHERE t2.years_employed >= 0
 ORDER BY Median;
 
 /*Length of Employement Campus*/
 SELECT
-  DISTINCT t1.Campus_,
-  ROUND(AVG(t1.years_employed) OVER (PARTITION BY t1.Campus_),2) AS Mean,
-  PERCENTILE_DISC(t1.years_employed,0.50) OVER (PARTITION BY t1.Campus_) AS Median
-FROM t1
-WHERE t1.years_employed >= 0
+  DISTINCT t2.Campus_,
+  ROUND(AVG(t2.years_employed) OVER (PARTITION BY t2.Campus_),2) AS Mean,
+  PERCENTILE_DISC(t2.years_employed,0.50) OVER (PARTITION BY t2.Campus_) AS Median
+FROM t2
+WHERE t2.years_employed >= 0
+ORDER BY Median
 
 ~~~
