@@ -41,7 +41,9 @@ SELECT
   SUM(Actual_Budget_Salary) OVER (PARTITION BY Department) AS Actual,
  ROUND((SUM(Finance_Budget_Salary) OVER (PARTITION BY Department)) - (SUM(Actual_Budget_Salary) OVER (PARTITION BY Department)),2) AS Difference -- Projected - Actual
 FROM `single-being-353600.FA_Budget_Analysis.Budget_Analysis_23_24`
+WHERE Department NOT IN ('HS','K-8')
 ORDER BY Difference;
+--Excluded HS & K-8 because they are campuses
 
 /*Campus Actual and Projected Salaries*/
 SELECT 
