@@ -50,7 +50,7 @@ In total, there were 11 unbudgeted hires with a  total of $878,822.56 in salarie
 
 ## Conlclusion
 
-More than three quarters, 76%, of the staff in the small charter school network have been employed for 5 years or less. Approximately 28% of employees in the small charter school network are in their first year of employment at . More than half of the employees,52%, in the small charter school network have been employed for between two to five years, and the typical length of employment is approximately 2 years. Additionally, Deans of Instruction have a typical length of employment of 5 months and teachers have a typical length of approximately 2 years.
+More than three quarters, 76%, of the staff in the small charter school network have been employed for 5 years or less. Approximately 28% of employees in the small charter school network are in their first year of employment at . More than half of the employees,52%, in the small charter school network have been employed for between two to five years, and the typical length of employment is approximately 2 years. 
 
 As it pertains to finances there is currently a surplus of approximately $1.6 million dollars. The Department of Instructional Services has the largest deficit of approximately a quarter of a million dollars while the Department of School Administration has the largest surplus of funds of approximately $132,000. Home Office has the largest deficit of any campus of -$17,082.98. On the other hand Upper ES Campus has the largest surplus of all campuses of more than three quarters of a million dollars. 
 
