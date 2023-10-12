@@ -27,13 +27,6 @@ Approximately three in ten employees, 28%, in the small charter shool network ar
 
 The ES Campus has the lowest typical length of employment in the network, 1 year and 2 months, Home Office has the second lowest typical length of employment in the network, 1 year and 10 months, High School has the second high typical length of employment, approximately 2 years, and Middle School has the highest typical length of employment, 3 years and 2 months.
 
-|**Position**|**Typical Length of Employment**|
-|---|---|
-|Deans of Instruction|Approximately 5 months|
-|Directors|1 year and 2 months|
-|Deans of Student Culture|1 year and 8 months|
-|Teachers|2 years and 1 month|
-|Chiefs|3 years and 3 months|
 
 2. What is the difference in the projected and actual salaries for both departments and campuses?
 
