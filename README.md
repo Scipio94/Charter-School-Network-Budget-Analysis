@@ -1,4 +1,4 @@
-# School Budget Analysis
+# Charter School Budget Analysis
 
 
 ## Abstract
