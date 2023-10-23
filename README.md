@@ -44,7 +44,7 @@ Based on the visualization above, Home Office has the largest campus deficit in 
 
 3. How many positions were unbudgeted and what is the amount of unbudgeted salaries?
 
-![Unbudgeted Hire Metrics](https://github.com/Scipio94/School-Budget-Analysis/assets/112409778/802792a5-45a8-4479-8d5e-2c35824eba07)
+![Unbudgeted Hire Metrics_11](https://github.com/Scipio94/Charter-School-Network-Budget-Analysis/assets/112409778/c7cb12e9-0e97-4675-8f51-e21136abc9ab)
 
 In total, there were 11 unbudgeted hires with a  total of $878,822.56 in salaries. 27% of the new hires were in the Department of Improvement of Instructional Services, and more than half of the new hires were from the Home Office Campus.
 
