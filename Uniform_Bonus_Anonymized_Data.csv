@@ -1,0 +1,152 @@
+Name,position_group,FY_24_End_Employment_Length,Uniform_Add_On
+C#########,School Counselors,0.76,0
+A#########,Social Worker,0.78,0
+H#########,Secretaries,0.78,0
+C#########,Substitute,0.78,0
+J#########,Facilities,0.87,0
+V#########,Directors,0.86,0
+D#########,Directors,0.88,0
+W#########,Dean of Special Education,0.88,0
+J#########,Teacher,0.88,0
+V#########,Teacher,0.88,0
+A#########,Teacher,0.88,0
+A#########,Teacher,0.88,0
+M#########,PIR,0.88,0
+M#########,Teacher,0.88,0
+C#########,Paraprofessional,0.88,0
+L#########,Teacher,0.9,0
+K#########,Teacher,0.9,0
+S#########,Teacher,0.9,0
+C#########,P/T Bus Drivers,0.91,0
+D#########,Social Worker,0.91,0
+D#########,Substitute,0.91,0
+D#########,Teacher,0.91,0
+V#########,Secretaries,0.96,0
+T#########,Business Finance Associate,0.97,0
+A#########,LSOC,0.97,0
+C#########,Deans of Instruction,0.99,0
+B#########,Secretaries,1.03,0
+C#########,HR Generalist,1.03,0
+D#########,Operations Manager,1.08,0
+S#########,Deans of Instruction,1.15,0
+A#########,Teacher,1.2,0
+G#########,Secretaries,1.32,0
+R#########,LPN (PS/IS/MS Split),1.32,0
+K#########,LPN (HS),1.33,0
+N#########,Teacher,1.36,0
+M#########,Teacher,1.4,0
+A#########,Chiefs,1.42,0
+E#########,Teacher,1.45,0
+C#########,LPN (PS/IS/MS Split),1.45,0
+R#########,Enrollment,1.57,0
+G#########,Substitute,1.57,0
+A#########,ELA Content Coach ,1.66,0
+E#########,Deans of Instruction,1.66,0
+M#########,Paraprofessional,1.74,0
+S#########,Teacher,1.82,0
+S#########,Teacher,1.82,0
+T#########,Social Worker,1.83,0
+T#########,Lead School Nurse (PS/IS/MS/HS Split),1.84,0
+M#########,Teacher,1.85,0
+S#########,Paraprofessional,1.89,0
+S#########,Teacher,1.89,0
+A#########,LSOC,1.89,0
+D#########,Communications Specialist (P/T),1.91,0
+C#########,Teacher,1.91,0
+T#########,Teacher,1.91,0
+C#########,Teacher,1.91,0
+D#########,Teacher,1.91,0
+L#########,Teacher,1.91,0
+B#########,Teacher,1.91,0
+J#########,Teacher,1.91,0
+H#########,Teacher,1.91,0
+P#########,Facilities,1.97,0
+R#########,Directors,1.97,0
+Y#########,Social Worker,1.99,0
+E#########,Board Certified Behavior Analyst (BCBA)/BCaBA,1.99,0
+C#########,Social Worker,1.99,0
+A#########,Teacher,1.99,0
+C#########,Deans of Instruction,1.99,0
+E#########,Facilities,2.12,1000
+T#########,Business Office,2.18,1000
+M#########,Directors,2.22,1000
+Z#########,Talent Professionals,2.22,1000
+J#########,College & Career,2.34,1000
+J#########,LSOC,2.43,1000
+D#########,Facilities,2.57,1000
+L#########,LSOC,2.58,1000
+F#########,LSOC,2.65,1000
+A#########,Teacher,2.67,1000
+S#########,Executive Administrative Assistant,2.75,1000
+S#########,Teacher,2.75,1000
+V#########,P/T Bus Drivers,2.77,1000
+B#########,Teacher,2.78,1000
+M#########,Teacher,2.78,1000
+V#########,Teacher,2.79,1000
+M#########,Business Office,2.8,1000
+M#########,Teacher,2.85,1000
+K#########,Facilities,2.85,1000
+D#########,Business Office,2.85,1000
+V#########,Teacher,2.87,1000
+I#########,Teacher,2.87,1000
+H#########,Facilities,2.9,1000
+T#########,Teacher,2.9,1000
+S#########,Teacher,2.9,1000
+G#########,Teacher,2.9,1000
+J#########,Tech Professional,2.94,1000
+M#########,Tech Professional,3.08,1500
+B#########,Substitute,3.25,1500
+C#########,College & Career,3.7,1500
+B#########,Teacher,3.7,1500
+B#########,PIR,3.89,1500
+C#########,Teacher,3.9,1500
+J#########,Teacher,3.9,1500
+Y#########,Teacher,3.9,1500
+A#########,Paraprofessional,3.9,1500
+J#########,Business Office,3.98,1500
+S#########,Chiefs,4.0,1500
+K#########,PIR,4.0,1500
+A#########,Principal,4.44,2000
+E#########,Teacher,4.58,2000
+S#########,504 Coordinator,4.9,2000
+J#########,Facilities,4.9,2000
+I#########,Teacher,4.9,2000
+S#########,Teacher,4.9,2000
+J#########,P/T Special Education (K-5),4.9,2000
+E#########,Teacher,5.31,2500
+J#########,Teacher,5.91,2500
+J#########,Paraprofessional,6.52,3000
+C#########,Teacher,6.59,3000
+N#########,Teacher,6.86,3000
+D#########,Teacher,6.91,3000
+R#########,Teacher,7.45,3500
+I#########,Facilities,7.66,3500
+D#########,Teacher,7.87,3500
+R#########,Special Projects / Board of Trustees Liasion,7.91,3500
+K#########,Teacher,7.91,3500
+N#########,Chiefs,8.0,3500
+A#########,Tech Professional,8.75,4000
+L#########,Teacher,8.91,4000
+S#########,LSOC,8.91,4000
+S#########,Facilities,9.44,4500
+C#########,Facilities,9.61,4500
+E#########,Teacher,9.88,4500
+B#########,Teacher,9.92,4500
+C#########,Teacher,9.92,4500
+L#########,Talent Professionals,10.0,4500
+J#########,College & Career,10.0,4500
+J#########,Facilities,10.6,5000
+C#########,Teacher,10.92,5000
+T#########,Teacher,10.92,5000
+V#########,Teacher,11.49,5000
+D#########,Tech Professional,11.57,5000
+M#########,Facilities,11.89,5000
+J#########,School Counselors,11.92,5000
+K#########,Teacher,11.92,5000
+B#########,Data & Assessment Leader,11.99,5000
+I#########,Principal,12.91,5000
+A#########,Teacher,12.91,5000
+J#########,Enrollment,13.0,5000
+S#########,Chiefs,13.91,5000
+C#########,Teacher,13.91,5000
+J#########,Directors,14.83,5000
